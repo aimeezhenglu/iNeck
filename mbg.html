@@ -57,43 +57,44 @@
     <!-- ROUND TWO -->
     <a-entity id="green1" obj-model="obj: #si-obj; mtl: #si-mtl" position="4 1 -5" rotation="0 -90 0" scale=".35 .4 .4"
       animation__rot="property: position; from:-4 7 -5; to: -4 3 -5; loop: true; dur: 3000; dir: alternate; easing: easeInSine"
-      event-set__enter="_event: mouseenter; scale: .5 .5 .5; _target: #green1; visible: fales" 
-      event-set__leave="_event: mouseleave; scale: .8 .8 .8; _target: #green1; visible: true"
+      event-set__enter="_event: mouseenter; scale: .5 .5 .5; _target: #green1; visible: fales;" 
+      event-set__leave="_event: mouseleave; scale: .8 .8 .8; _target: #green1; visible: fales"
       sound="src: assets/sound/sound9.mp3; on: mouseenter">
     </a-entity>
 
     <a-entity id="purple1" obj-model="obj: #si-obj6; mtl: #si-mtl" position="4 1 -5" rotation="0 0 0" scale=".9 .5 .5"
       animation__rot="property: position; from:0 3 -5; to: 0 7 -5; loop: true; dur: 3000; dir: alternate; easing: easeInSine"
-      event-set__enter="_event: mouseenter; scale: .5 .5 0; _target: #purple1; visible: fales" 
-      event-set__leave="_event: mouseleave; scale: .9 .5 0; _target: #purple1; visible: true"
+      event-set__enter="_event: mouseenter; scale: .5 .5 0; _target: #purple1; visible: fales;" 
+      event-set__leave="_event: mouseleave; scale: .9 .5 0; _target: #purple1; visible: fales"
       sound="src: assets/sound/sound9.mp3; on: mouseenter">
     </a-entity>
 
   <a-entity id="pink1" obj-model="obj: #si-obj7; mtl: #si-mtl" position="-13.79554 15.79258 -14.27923" rotation="0 0 0" scale="0.6 .4 .4"
   animation__rot="property: position; from:4 7 -5; to: 4 4 -5; loop: true; dur: 3000; dir: alternate; easing: easeInSine"
-  event-set__enter="_event: mouseenter; scale: .5 .5 .5; _target: #pink1; visible: fales" 
-  event-set__leave="_event: mouseleave; scale: .5 .7 .2;; _target: #pink1; visible: true"
+  event-set__enter="_event: mouseenter; scale: .5 .5 .5; _target: #pink1; visible: fales; _target: #bg; color: #FFB7A1" 
+  event-set__leave="_event: mouseleave; scale: .5 .7 .2; _target: #pink1; visible: fales"
   sound="src: assets/sound/sound9.mp3; on: mouseenter">
 </a-entity>
 
   <a-entity id="orange1" obj-model="obj: #si-obj2; mtl: #si-mtl" position="-13.79554 15.79258 -14.27923" rotation="0 50 0" scale=".6 .4 .4"
     animation__rot="property: position; from:-10 3 -5; to: -10 9 -5; loop: true; dur: 5000; dir: alternate; easing: easeInSine"
     event-set__enter="_event: mouseenter; scale: .5 .5 .5; _target: #orange1; visible: fales" 
-    event-set__leave="_event: mouseleave; scale: .5 .2 .2;; _target: #orange1; visible: true"
+    event-set__leave="_event: mouseleave; scale: .5 .2 .2; _target: #orange1; visible: fales"
     sound="src: assets/sound/sound9.mp3; on: mouseenter">
   </a-entity>
 
   <a-entity id="brown1" obj-model="obj: #si-obj3; mtl: #si-mtl" position="-13.79554 15.79258 -14.27923" rotation="0 -160 0" scale=".7 .5 .5"
     animation__rot="property: position; from:10 9 -5; to: 10 3 -5; loop: true; dur: 3000; dir: alternate; easing: easeInSine"
     event-set__enter="_event: mouseenter; scale: .5 .5 .5; _target: #brown1; visible: fales" 
-    event-set__leave="_event: mouseleave; scale: .5 .2 .2;; _target: #brown1; visible: true"
+    event-set__leave="_event: mouseleave; scale: .5 .2 .2; _target: #brown1; visible: fales"
     sound="src: assets/sound/sound9.mp3; on: mouseenter">
   </a-entity>
 
-
+    <a-sky id="bg" color="#fffff"></a-sky>
+    <a-ground id="gd" color="#FFB7A1"></a-ground>
     
-    <a-entity laser-controls="hand: left "></a-entity>
-    <a-entity laser-controls="hand: right "></a-entity>
+    <!-- <a-entity laser-controls="hand: left "></a-entity>
+    <a-entity laser-controls="hand: right "></a-entity> -->
 
     <a-light type="ambient" color="#444"></a-light>
     <a-light type="point" intensity="0.5"></a-light>
