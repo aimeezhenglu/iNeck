@@ -44,71 +44,51 @@
     </a-entity>
 
 
-    <a-entity id="start" obj-model="obj: #si-obj8; mtl: #si-mtl" position="0 1 0" rotation="0 0 0" scale=".5 .5 .5"
+    <!-- <a-entity id="start" obj-model="obj: #si-obj8; mtl: #si-mtl" position="0 1 0" rotation="0 0 0" scale=".5 .5 .5"
       animation__rot="property: position; from:0 1.5 -5; to: 0 .4 -5; loop: true; dur: 2000; dir: alternate; easing: easeInSine"
       event-set__enter="_event: mouseenter; _target: #start; visible: false"
       event-set__leave="_event: mouseleave; _target: #start; visible: false"
       sound="src: assets/sound/sound9.mp3; on: mouseenter">
-    </a-entity>
+    </a-entity> -->
 
     <a-entity id="introduction" obj-model="obj: #si-obj9; mtl: #si-mtl" position="1 -1 -4" rotation="0 -20 0" scale=".5 .5 .5">
     </a-entity>
-    
-    <a-entity id="green" obj-model="obj: #si-obj; mtl: #si-mtl" position="4 1 -5" rotation="0 -90 0" scale="1 1 1"
-      animation__rot="property: position; from:4 10 -100; to: 4 10 100; loop: true; dur: 15000; dir: alternate; easing: easeInSine"
-      event-set__enter="_event: mouseenter; _target: #green; visible: false"
-      event-set__leave="_event: mouseleave; _target: #green; visible: false"
+ 
+    <!-- ROUND TWO -->
+    <a-entity id="green1" obj-model="obj: #si-obj; mtl: #si-mtl" position="4 1 -5" rotation="0 -90 0" scale=".35 .4 .4"
+      animation__rot="property: position; from:-4 7 -5; to: -4 3 -5; loop: true; dur: 3000; dir: alternate; easing: easeInSine"
+      event-set__enter="_event: mouseenter; scale: .5 .5 .5; _target: #green1; visible: fales" 
+      event-set__leave="_event: mouseleave; scale: .8 .8 .8; _target: #green1; visible: true"
       sound="src: assets/sound/sound9.mp3; on: mouseenter">
     </a-entity>
 
-    <a-entity id="rocket" obj-model="obj: #si-obj4; mtl: #si-mtl" position="-13.79554 15.79258 -14.27923" rotation="90 0 0" scale="1 1 1"
-      animation__rot="property: position; from:-15 10 -100; to: 4 10 100; loop: true; dur: 20000; dir: alternate; easing: easeInSine"
-      event-set__enter="_event: mouseenter; _target: #rocket; visible: false"
-      event-set__leave="_event: mouseleave; _target: #rocket; visible: false"
+    <a-entity id="purple1" obj-model="obj: #si-obj6; mtl: #si-mtl" position="4 1 -5" rotation="0 0 0" scale=".9 .5 .5"
+      animation__rot="property: position; from:0 3 -5; to: 0 7 -5; loop: true; dur: 3000; dir: alternate; easing: easeInSine"
+      event-set__enter="_event: mouseenter; scale: .5 .5 0; _target: #purple1; visible: fales" 
+      event-set__leave="_event: mouseleave; scale: .9 .5 0; _target: #purple1; visible: true"
       sound="src: assets/sound/sound9.mp3; on: mouseenter">
     </a-entity>
 
-    <a-entity id="purple" obj-model="obj: #si-obj6; mtl: #si-mtl" position="4 1 -5" rotation="0 0 0" scale="1 1 1"
-      animation__rot="property: position; from:-20 10 -200; to: -20 10 100; loop: true; dur: 30000; dir: alternate; easing: easeInSine"
-      event-set__enter="_event: mouseenter; _target: #purple; visible: false"
-      event-set__leave="_event: mouseleave; _target: #purple; visible: false"
-      sound="src: assets/sound/sound9.mp3; on: mouseenter">
-    </a-entity>
+  <a-entity id="pink1" obj-model="obj: #si-obj7; mtl: #si-mtl" position="-13.79554 15.79258 -14.27923" rotation="0 0 0" scale="0.6 .4 .4"
+  animation__rot="property: position; from:4 7 -5; to: 4 4 -5; loop: true; dur: 3000; dir: alternate; easing: easeInSine"
+  event-set__enter="_event: mouseenter; scale: .5 .5 .5; _target: #pink1; visible: fales" 
+  event-set__leave="_event: mouseleave; scale: .5 .7 .2;; _target: #pink1; visible: true"
+  sound="src: assets/sound/sound9.mp3; on: mouseenter">
+</a-entity>
 
-    <a-entity id="pink" obj-model="obj: #si-obj7; mtl: #si-mtl" position="-13.79554 15.79258 -14.27923" rotation="0 0 0" scale="1 1 1"
-    animation__rot="property: position; from:-10 10 -250; to: 4 10 100; loop: true; dur: 28000; dir: alternate; easing: easeInSine"
-    event-set__enter="_event: mouseenter; _target: #pink; visible: false"
-    event-set__leave="_event: mouseleave; _target: #pink; visible: false"
+  <a-entity id="orange1" obj-model="obj: #si-obj2; mtl: #si-mtl" position="-13.79554 15.79258 -14.27923" rotation="0 50 0" scale=".6 .4 .4"
+    animation__rot="property: position; from:-10 3 -5; to: -10 9 -5; loop: true; dur: 5000; dir: alternate; easing: easeInSine"
+    event-set__enter="_event: mouseenter; scale: .5 .5 .5; _target: #orange1; visible: fales" 
+    event-set__leave="_event: mouseleave; scale: .5 .2 .2;; _target: #orange1; visible: true"
     sound="src: assets/sound/sound9.mp3; on: mouseenter">
   </a-entity>
 
-    <a-entity id="orange" obj-model="obj: #si-obj2; mtl: #si-mtl" position="-13.79554 15.79258 -14.27923" rotation="0 0 0" scale="1 1 1"
-      animation__rot="property: position; from:-10 10 -280; to: 4 10 100; loop: true; dur: 33000; dir: alternate; easing: easeInSine"
-      event-set__enter="_event: mouseenter; _target: #orange; visible: false"
-      event-set__leave="_event: mouseleave; _target: #orange; visible: false"
-      sound="src: assets/sound/sound9.mp3; on: mouseenter">
-    </a-entity>
-
-    <a-entity id="rocket1" obj-model="obj: #si-obj4; mtl: #si-mtl" position="-13.79554 15.79258 -14.27923" rotation="90 0 0" scale="1 1 1"
-      animation__rot="property: position; from:15 10 -150; to: 4 10 100; loop: true; dur: 25000; dir: alternate; easing: easeInSine"
-      event-set__enter="_event: mouseenter; _target: #rocket1; visible: false"
-      event-set__leave="_event: mouseleave; _target: #rocket1; visible: false"
-      sound="src: assets/sound/sound9.mp3; on: mouseenter">
-    </a-entity> 
-    
-    <a-entity id="rocket2" obj-model="obj: #si-obj4; mtl: #si-mtl" position="-13.79554 15.79258 -14.27923" rotation="90 0 0" scale="1 1 1"
-      animation__rot="property: position; from:-10 8 -100; to:0 8 100; loop: true; dur: 40000; dir: alternate; easing: easeInSine"
-      event-set__enter="_event: mouseenter; _target: #rocket2; visible: false"
-      event-set__leave="_event: mouseleave; _target: #rocket2; visible: false"
-      sound="src: assets/sound/sound9.mp3; on: mouseenter">
-    </a-entity>
-
-    <a-entity id="brown" obj-model="obj: #si-obj3; mtl: #si-mtl" position="-13.79554 15.79258 -14.27923" rotation="0 -90 0" scale="1 1 1"
-      animation__rot="property: position; from:10 10 -200; to: 10 10 100; loop: true; dur: 38000; dir: alternate; easing: easeInSine"
-      event-set__enter="_event: mouseenter; _target: #brown; visible: false"
-      event-set__leave="_event: mouseleave; _target: #brown; visible: false"
-      sound="src: assets/sound/sound9.mp3; on: mouseenter">
-    </a-entity>
+  <a-entity id="brown1" obj-model="obj: #si-obj3; mtl: #si-mtl" position="-13.79554 15.79258 -14.27923" rotation="0 -160 0" scale=".7 .5 .5"
+    animation__rot="property: position; from:10 9 -5; to: 10 3 -5; loop: true; dur: 3000; dir: alternate; easing: easeInSine"
+    event-set__enter="_event: mouseenter; scale: .5 .5 .5; _target: #brown1; visible: fales" 
+    event-set__leave="_event: mouseleave; scale: .5 .2 .2;; _target: #brown1; visible: true"
+    sound="src: assets/sound/sound9.mp3; on: mouseenter">
+  </a-entity>
 
 
     
